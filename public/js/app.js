@@ -1,7 +1,7 @@
 console.log("Client side JS file loaded");
 
 const fetchData = (address) => {
-  fetch(`http://localhost:3000/weather?address=${address}`)
+  fetch(`/weather?address=${address}`)
     .then((res) => res.json())
     .then((res) => {
       console.log(res, res.data);
